@@ -1,0 +1,20 @@
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: rgb(249, 249, 249);
+    padding: 5px 200px;
+}
+.nav-content {
+    padding: 5px;
+}
+
+.nav-content span {
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.nav-content img {
+    vertical-align: middle;
+    padding-right: 4px;
+}
