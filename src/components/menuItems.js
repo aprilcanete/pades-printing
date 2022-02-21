@@ -10,30 +10,30 @@ export const menuItems = [
         subMenu: [
             {
                 title: 'Brochure',
-                path: '/product/brochure'
+                path: '/products/brochure'
             },
             {
                 title: 'Business Card',
-                path: '/product/business-card'
+                path: '/products/business-card'
             },
             {
                 title: 'Receipt',
-                path: '/product/receipt'},
+                path: '/products/receipt'},
             {
                 title: 'Banners',
-                path: '/product',
+                path: '/products/banners',
                 subMenu: [
                     {
                         title: 'Pull-up banner',
-                        path: '/product'
+                        path: '/products/banners/pull-up'
                     },
                     {
                         title: 'Standee banner',
-                        path: '/product'
+                        path: '/products/banners/standee'
                     },
                     {
                         title: 'Tarpulin',
-                        path: '/product'
+                        path: '/products/banners/tarpulin'
                     }
                 ]
             },

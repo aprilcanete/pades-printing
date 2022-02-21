@@ -10,7 +10,7 @@ export default function TopNav({ handleLoginClick }) {
         <div className="top-nav">
             <div className="nav-content">
                 <img src="/images/phone-icon.png" alt="phone icon" />
-                <span>123456789</span>
+                <span>+63 2 738 1070</span>
                 <img src="/images/email-icon.png" alt="mail icon" />
                 <span>padesprinting@yahoo.com</span>
             </div>

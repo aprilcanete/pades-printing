@@ -4,22 +4,34 @@ footer {
 }
 .footer-content {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(244, 244, 244);
     padding: 30px;
 }
 
 .footer-links-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    text-align: left;
+}
+
+.footer-links {
     text-align: left;
 }
 
 .footer-links a {
-    display: block;
+    display: block
 }
 
 .footer-about {
-    flex-grow: 0.5;
+    flex-grow: 0.3;
+    border-right: 1px solid black;
+}
+
+.footer-side {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.2;
+    padding-top: 24px;
 }
 
 .bottom {

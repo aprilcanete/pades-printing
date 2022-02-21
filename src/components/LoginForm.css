@@ -1,5 +1,7 @@
 
-
+.login-container {
+  min-width: 100vw;
+}
 
 .login-form{
     width: 100%;
@@ -11,7 +13,7 @@
 
 .form-box{
     margin-top: 7vh;
-    opacity:80%;
+    /* opacity:80%; */
     background: black;
     padding-right: 80px;
     padding-left: 80px;

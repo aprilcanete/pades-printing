@@ -32,14 +32,15 @@ function App() {
   return ( 
     <div className="App">
       <TopNav handleLoginClick={handleLoginClick}/>
-      <div className="container">
-        <div className={`${isShowLogin ? "active" : ""} show`}>
+      <div className={`login-container ${isShowLogin ? "active" : ""} show`}>
           <LoginForm/> {changeLoginBgc(isShowLogin)}
-        </div>
+      </div>
+      <div className={`container${isShowLogin || " inactive"}`}>
         <header>
           <div className='logo-wrapper'>
-            <Link to="/"><h1>PADES</h1></Link>
-            <p>Design & Print</p>
+            <Link to="/">
+              <img src="/images/pades-logo.png" alt="pades logo" />
+            </Link>
           </div>
           <nav className='nav nav-pills nav-justified'>
             <div className="menus">
@@ -55,12 +56,13 @@ function App() {
             </div>
             <Link to="/getquote" className='nav-link quote'>Get A Quote</Link>
           </nav>
-          <hr />
         </header>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products/brochure" element={<Products />} />
+            <Route path="/products/banner" element={<Products />} />
+            <Route path="/products/business-card" element={<Products />} />
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />

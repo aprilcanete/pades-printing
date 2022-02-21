@@ -4,22 +4,50 @@
     height: 50vh;
 }
 
-main section {
-
+.logo-wrapper img {
+    width: 500px;
+    height: 150px;
+    cursor: pointer;
 }
 
 .products-card-wrapper {
     display: flex;
-    justify-content: space-between;
-    text-align: left;
+    justify-content: space-evenly;
+    text-align: center;
     margin: auto 100px;
+    flex-direction: row;
 }
+
+@media (max-width: 900px) {
+    .products-card-wrapper {
+        flex-direction: column;
+    }
+}
+/* @media only screen and (max-width: 761px) {
+    .products-card-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+} */
 
 .card {
     width: 20rem;
     border: 0;
 }
+.card-body {
+    padding: 1rem 0;
+}
 
 .content {
     margin: 50px auto;
+}
+
+.card-img-top {
+    height: 214px;
+}
+
+.btn-primary {
+    background-color: #deedc4;
+    border-color: #deedc4;
+    color: #000;
 }
