@@ -9,6 +9,7 @@ export default function Footer() {
                     <p>72 Dollar, Novaliches, Quezon City, <br></br> Metro Manila, Philippines</p>
                     <p>+63 2 738 1070</p>
                     <a href="https://www.facebook.com/PADESprintingServices/"><img src="/images/facebook-icon.png" alt="" /></a>
+                    <a href="https://">  <img src="/images/twitter-icon.png" alt="" /></a>
                     <br></br>
                     <br></br>
                     <a href="/about">About Us</a>
