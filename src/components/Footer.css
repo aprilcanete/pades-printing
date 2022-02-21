@@ -1,0 +1,28 @@
+footer {
+    width: 100%;
+    border-top: 1px solid rgb(172, 172, 172);
+}
+.footer-content {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-links a {
+    display: block;
+}
+
+.footer-about {
+    flex-grow: 0.5;
+}
+
+.bottom {
+    background-color: #deedc4;
+    height: 40px;
+}

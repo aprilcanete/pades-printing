@@ -3,3 +3,23 @@
     width: 100%;
     height: 50vh;
 }
+
+main section {
+
+}
+
+.products-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: auto 100px;
+}
+
+.card {
+    width: 20rem;
+    border: 0;
+}
+
+.content {
+    margin: 50px auto;
+}

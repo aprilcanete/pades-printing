@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import Dropdown from './Dropdown';
+import { Link } from 'react-router-dom'
 
 const MenuItem = ({ items, depthLevel }) => {
     const [dropdown, setDropdown] = useState(false);
     let ref = useRef();
+    let pageComponent = `<${items.title} />`
 
     useEffect(() => {
         const handler = (event) => {
@@ -27,24 +29,38 @@ const MenuItem = ({ items, depthLevel }) => {
        const onMouseLeave = () => {
         window.innerWidth > 960 && setDropdown(false);
        };
-
+       
     return (
-        <li className="menu-items" ref={ref} onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}>
-             {items.subMenu ? (
-            <>
-                <button type="button" aria-haspopup="menu" 
-                aria-expanded={dropdown ? "true" : "false"}
-                onClick={() => setDropdown((prev) => !prev)}
-                >
-                {items.title}{" "}
-                {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
-                </button>
-                <Dropdown subMenus={items.subMenu} dropdown={dropdown}/>
-            </>
-            ) : (items.title)
-            }
-        </li>
+        <>
+            <li className="menu-items" 
+                ref={ref} 
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+            >
+                {items.subMenu ? (
+                <>
+                    <Link 
+                        to={items.path + "/" + items.title}
+                        role='button'
+                        aria-haspopup="menu" 
+                        aria-expanded={dropdown ? "true" : "false"}
+                        onClick={() => setDropdown((prev) => !prev)}
+                    >
+                        {items.title}
+                        {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+                    </Link>
+                    <Dropdown 
+                        subMenus={items.subMenu} 
+                        dropdown={dropdown} 
+                        depthLevel={depthLevel}
+                    />
+                </>
+                ) : ( <Link to={items.path}>{items.title}</Link>)
+                }
+            </li>
+        </>
+       
+        
     ) 
 }
 
