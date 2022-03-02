@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 const MenuItem = ({ items, depthLevel }) => {
     const [dropdown, setDropdown] = useState(false);
     let ref = useRef();
-    let pageComponent = `<${items.title} />`
 
     useEffect(() => {
         const handler = (event) => {

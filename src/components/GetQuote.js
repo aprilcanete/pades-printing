@@ -32,7 +32,7 @@ export default function GetQuote({ items }) {
                     <input type="name" className="form-control" placeholder="Full name" aria-label="Full name"/>
                 </div>
                 <div className="mb-3">
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Addional Details"></textarea>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Additional Details"></textarea>
                 </div>
                 <div className="col-12">
                     <button type="submit" className="btn btn-primary">Send</button>

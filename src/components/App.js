@@ -19,7 +19,7 @@ import GetQuote from './GetQuote';
 function App() {
 
   const [isShowLogin, setIsShowLogin] = useState(true)
-  let container = document.querySelector(".container")
+  // let container = document.querySelector(".container")
 
   const handleLoginClick = () => {
     setIsShowLogin((isShowLogin) => !isShowLogin)
@@ -60,6 +60,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/products/brochure" element={<Products />} />
             <Route path="/products/banner" element={<Products />} />
             <Route path="/products/business-card" element={<Products />} />
